@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layoutMyText">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text=""
+            android:lines="1"
+            android:focusable="true"
+            android:id="@+id/titleTextView"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutImage"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal"
+    android:layout_below="@+id/layoutMyText">
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/galleryImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutImage"
+        android:id="@+id/layoutButtons"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_delete"
+            android:padding="@dimen/row_icons_padding"
+            android:tint="@android:color/darker_gray"
+            android:background="@android:color/transparent"
+            android:id="@+id/imgDelete" />
+
+    </LinearLayout>
+
+</RelativeLayout>

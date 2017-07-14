@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MyPhoto Gallery</string>
+    <string name="login.message.email">Correo eléctronico</string>
+    <string name="login.message.password">Contraseña</string>
+    <string name="login.message.signin">Login</string>
+    <string name="login.message.signup">Registrarse</string>
+    <string name="login.error.message.signin">Imposible iniciar sesión</string>
+    <string name="login.notice.message.signup">Usuario registrado con éxito</string>
+    <string name="login.error.message.signup">Error al registrar usuario</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Acerca de</string>
+    <string name="menu.title.home">Inicio</string>
+    <string name="menu.title.camera">Cámara</string>
+    <string name="menu.title.gallery">Galería</string>
+    <string name="menu.title.share">Compartir</string>
+    <string name="menu.title.inspect.photo">Inspeccionar fotos</string>
+    <string name="menu.title.logout">Cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_error_dispatch_camera">Error al crear el archivo</string>
+    <string name="main.title.message.camera">Necesito tu permiso</string>
+    <string name="main.body.message.camera">Necesito tu permiso para poder guardar tus fotos</string>
+    <string name="main.result.message.camera">Has rechazado el permiso</string>
+    <string name="main.camera.success">Foto guardada exitosamente</string>
+    <string name="main.message.post.camera">Guardando su imagen</string>
+    <string name="search.message.hint">Ingrese un criterio de busqueda</string>
+    <string name="search.message.search">Buscar</string>
+    <string name="search.message.title">Buscar fotos</string>
+    <string name="search_message_button">Buscar</string>
+    <string name="search.message.cancel">Cancelar</string>
+    <string name="image.message.save">Guardar</string>
+    <string name="image.message.next">Siguiente</string>
+    <string name="image.message.title">Imagenes encontradas</string>
+    <string name="gallery.delete.image">Imagen borrada</string>
+    <string name="main.message.photo.empty">No hay foto para mostrar</string>
+    <string name="main.message.gallery.empty">No hay fotos guardadas</string>
+    <string name="main.message.uri.empty">Ocurrió un error intentelo nuevamente</string>
+</resources>

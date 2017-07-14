@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/containerGallery"
+    tools:context="edu.galileo.android.myphotogallery.galleryfragment.GalleryFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/galleryRecyclerView"
+        />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarGallery"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrapperImageGallery"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emptyGalleryImageView"
+            android:visibility="visible"
+            android:src="@android:drawable/stat_sys_warning" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wrapperMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrapperImageGallery"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main.message.gallery.empty"
+            android:id="@+id/emptyGalleryTextView" />
+    </LinearLayout>
+
+</FrameLayout>

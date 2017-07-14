@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.galileo.android.myphotogallery.mainscreenfragment.MainScreenFragment">
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recipes_main_image_height"
+        android:id="@+id/photoImageView"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wrapperImage"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emptyImageView"
+                android:visibility="visible"
+                android:src="@android:drawable/stat_sys_warning" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wrapperMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wrapperImage"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main.message.photo.empty"
+                android:id="@+id/emptyTextView" />
+        </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/screenProgressBar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
